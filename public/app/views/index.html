@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Justin Essert</title>
+
+	<!-- For Angular Routing -->
+	<base href="/">
+
+	<!-- CSS Stylesheets -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+    <link href="assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+	<!-- JS -->
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	<script type='text/javascript' src="assets/libs/angular-scroll/angular-scroll.js"></script>
+
+	<!-- Controllers -->
+	<script src="app/controllers/mainCtrl.js"></script>
+
+	<!-- Services -->
+
+	<!-- main Angular app files -->
+	<script src="app/app.routes.js"></script>
+
+	<script src="app/app.js"></script>
+
+</head>
+<body ng-app="myapp" ng-controller="mainController as main" style="margin: 0px">
+	    <!-- Intro Header -->
+	    <header class="intro">
+            <div class="container col-md-8 col-md-offset-2">
+                <h1>Justin</h1>
+                <p>This is info about me</p>
+                <a href="#first" class="btn-circle" du-smooth-scroll>
+                    <i class="fa fa-angle-double-down"></i>
+                </a>
+            </div>
+	    </header>
+
+	    <!-- First Section -->
+	    <section id="first" class="container content-section text-center">
+			<div class="col-lg-8 col-lg-offset-2">
+				<h2>Section 1</h2>
+				<p>Text for section 1</p>
+			</div>
+	    </section>
+	</body>
+
+	</html>
