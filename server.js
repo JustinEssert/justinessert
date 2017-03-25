@@ -31,7 +31,8 @@ app.use(morgan('dev'));
 //For frontend references
 app.use(express.static(__dirname + '/public'));
 
-
+var apiRouter	= require('./app/routes/api.js')(app, express);
+app.use('/api', apiRouter);
 // Main route ------------------------------------------------------------------
 app.get('*', function(req, res) {
 	res.sendFile(path.join(__dirname + '/public/app/views/index.html'));
