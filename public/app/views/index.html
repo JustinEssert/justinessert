@@ -23,6 +23,9 @@
 	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
 	<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 	<script type='text/javascript' src="assets/libs/angular-scroll/angular-scroll.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/js/nav.js"></script>
 
 	<!-- Controllers -->
 	<script src="app/controllers/mainCtrl.js"></script>
@@ -35,7 +38,38 @@
 	<script src="app/app.js"></script>
 
 </head>
-<body ng-app="myapp" ng-controller="mainController as main" style="margin: 0px">
+<body id="page-top" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="myapp" ng-controller="mainController as main" style="margin: 0px">
+		<!-- Navigation -->
+		<nav class="navbar navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<ul class="nav navbar-nav top-nav">
+						<li><a href="#page-top" du-smooth-scroll>Justin Essert</a></li>
+					</ul>
+				</div>
+				<div class="navbar-right">
+					<ul class="nav navbar-nav page-nav">
+						<li class="hidden">
+							<a class="page-scroll" href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#tech" du-smooth-scroll>Technologies</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#work" du-smooth-scroll>Work Experience</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#ed" du-smooth-scroll>Education</a>
+						</li>
+						<li>
+							<a  class="page-scroll" href="#dev" du-smooth-scroll>Development Experience</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
 
 	    <!-- Intro Header -->
 	    <header class="intro">
@@ -50,6 +84,7 @@
 	    </header>
 		<div class="main">
 			<div class="content">
+
 				<!-- Technologies Section -->
 			    <div id="tech" class="content-section">
 					<div class="col-lg-4">
@@ -84,6 +119,7 @@
 						</div>
 					</div>
 			    </div>
+
 				<!-- Work Experience Section -->
 				<div id="work" class="content-section">
 					<div class="col-lg-4">
@@ -148,6 +184,7 @@
 						</ul>
 					</div>
 			    </div>
+
 				<!-- Education Section -->
 				<div id="ed" class="content-section">
 					<div class="col-lg-4">
@@ -205,6 +242,7 @@
 						</ul>
 					</div>
 			    </div>
+
 				<!-- Development Experience Section -->
 				<div id="dev" class="content-section">
 					<div class="col-lg-4">
@@ -224,7 +262,10 @@
 						<h5 class="subtitle">Java & HTML</h5>
 						<ul class="item">
 							<li>
-								Engineered an application that analyzes ESPN data and then predicts the outcome of NFL games using machine learning (Back-Propagation Neural Network).
+								Engineered an application that analyzes ESPN data and then predicts the outcome of NFL games using machine learning.
+							</li>
+							<li>
+								Uses a Back-Propagation Neural Network to create prediction.
 							</li>
 						</ul>
 
@@ -235,6 +276,12 @@
 						<ul class="item">
 							<li>
 								Currently creating a webpage for the UW-Madison's Help Desk to create a more efficient process in which to process computer repairs.
+							</li>
+							<li>
+								The webpage contains middleware that implements UW Authentication
+							</li>
+							<li>
+								The webpage interacts with a mySQL database to help diagnose computer problems
 							</li>
 						</ul>
 					</div>
