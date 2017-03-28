@@ -1,4 +1,4 @@
 # Ignored Files #
 ###################
-config.js
+config.*
 .DS_Store
