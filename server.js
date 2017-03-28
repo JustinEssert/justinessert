@@ -4,6 +4,7 @@ var express 	= require('express');
 var app			= express();
 var bodyParser 	= require('body-parser');
 var morgan		= require('morgan');
+var mongoose	= require('mongoose');
 var config		= require('./config');
 var path		= require('path');
 
@@ -25,7 +26,7 @@ app.use(function(req, res, next) {
 app.use(morgan('dev'));
 
 //Connect to a database
-//ADD CODE
+mongoose.connect(config.db);
 
 // ROUTE DEFINITIONS ===========================================================
 //For frontend references
