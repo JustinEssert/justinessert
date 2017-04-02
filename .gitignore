@@ -1,0 +1,5 @@
+# Ignored Files #
+###################
+config.*
+.DS_Store
+notes.*
